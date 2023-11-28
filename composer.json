@@ -1,5 +1,5 @@
 {
-  "name": "munafio/chatify",
+  "name": "ambitionphp/chatify",
   "description": "A package for Laravel PHP Framework to add a complete real-time chat system.",
   "type": "library",
   "keywords": [
@@ -16,15 +16,20 @@
   "license": "MIT",
   "authors": [
     {
+      "name": "Steven Sarkisian",
+      "email": "selfpaidinc@gmail.com"
+    },
+    {
       "name": "Munaf A. Mahdi",
       "email": "munafaqeelmahdi@gmail.com"
     }
   ],
-  "homepage": "https://github.com/munafio/chatify",
+  "homepage": "https://github.com/ambitionphp/chatify",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "pusher/pusher-php-server": "^6.0|^7.0|^7.1"
+    "pusher/pusher-php-server": "^6.0|^7.0|^7.1",
+      "overtrue/laravel-follow": "^5.1"
   },
   "autoload": {
     "psr-4": {
