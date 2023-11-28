@@ -84,11 +84,11 @@ class ChatifyMessenger
     /**
      * Authentication for pusher
      */
-    public function pusherAuth(User $requestUser, User $authUser, string $channelName, string $socket_id): string|JsonResponse
+    public function pusherAuth(User $requestUser, User $authUser, string $channelName, string $socket_id): JsonResponse
     {
         // Auth data
         $authData = json_encode([
-            'user_id' => $authUser->id,
+            'user_id' => (string) $authUser->id,
             'user_info' => [
                 'name' => $authUser->name,
             ],
