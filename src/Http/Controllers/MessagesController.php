@@ -171,6 +171,8 @@ class MessagesController extends Controller
 
         // if there is no messages yet.
         if ($totalMessages < 1) {
+
+            // this is where i would check following status and return other messages
             $response['messages'] = '<p class="message-hint center-el"><span>Say \'hi\' and start messaging</span></p>';
 
             return Response::json($response);
